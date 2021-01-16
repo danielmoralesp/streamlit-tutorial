@@ -2,5 +2,3 @@ streamlit==0.74.1
 pandas==0.25.3
 numpy==1.19.5
 scikit-learn==0.22.1
-
-// to know versions run pip3 list in your cpu and environment
