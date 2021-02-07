@@ -56,14 +56,23 @@ df = user_input_features()
 
 # Main Panel
 
+# Build Regression Model
+model = RandomForestRegressor()
+model.fit(X, Y)
+
+st.header('Score Results')
+
+## score
+score = model.score(X, Y)
+st.write(score)
+st.write('---')
+
 # Print specified input parameters
 st.header('Specified Input parameters')
 st.write(df)
 st.write('---')
 
-# Build Regression Model
-model = RandomForestRegressor()
-model.fit(X, Y)
+
 # Apply Model to Make Prediction
 prediction = model.predict(df)
 
